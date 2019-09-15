@@ -1,17 +1,64 @@
 {
-    "restaurant": [{
-            "nombrePlatillo": "CheeseCake",
-            "precioPlatillo": "200",
-            "categoria": "postre",
-            "id": 1
-        },
-        {
-            "nombrePlatillo": "Rib Eye 400g",
-            "precioPlatillo": "300",
-            "categoria": "corte",
-            "id": 1
-        }
-
-    ]
-
+  "restaurant": [
+    {
+      "nombrePlatillo": "CheeseCake",
+      "precioPlatillo": "300",
+      "categoria": "postre",
+      "id": 1
+    },
+    {
+      "nombrePlatillo": "Rib Eye 400g",
+      "precioPlatillo": "300",
+      "categoria": "cortes",
+      "id": 2
+    },
+    {
+      "nombrePlatillo": "coca",
+      "precioPlatillo": "15",
+      "categoria": "bebida",
+      "id": 3
+    },
+    {
+      "nombrePlatillo": "para eliminiar POST",
+      "precioPlatillo": "10",
+      "categoria": "bebida",
+      "id": 4
+    },
+    {
+      "nombrePlatillo": "eliminar 2",
+      "precioPlatillo": "1",
+      "categoriaPlatillo": "bebida",
+      "id": 5
+    },
+    {
+      "nombrePlatillo": "Cerveza Corona",
+      "precioPlatillo": "18",
+      "categoria": "bebida",
+      "id": 6
+    },
+    {
+      "nombrePlatillo": "prueba",
+      "precioPlatillo": "1",
+      "categoria": "ensalada",
+      "id": 7
+    },
+    {
+      "nombrePlatillo": "picaña",
+      "precioPlatillo": "220",
+      "categoriaPlatillo": "cortes",
+      "id": 8
+    },
+    {
+      "nombrePlatillo": "carnitas",
+      "precioPlatillo": "200",
+      "categoria": "cortes",
+      "id": 9
+    },
+    {
+      "nombrePlatillo": "carnitas",
+      "precioPlatillo": "20",
+      "categoria": "cortes",
+      "id": 10
+    }
+  ]
 }
