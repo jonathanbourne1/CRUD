@@ -16,6 +16,7 @@ const [recargarProducto,setRecargarProducto]=useState(true)
 
 useEffect(()=>{
 const consultarAPI= async()=>{
+  
  if(recargarProducto){
     //consultarAPI de json-server
   const resultado = await axios.get('http://localhost:4000/restaurant');
@@ -38,6 +39,7 @@ setRecargarProducto(false)
             render={()=>(
               <Productos
               productos={productos}
+              setRecargarProducto={setRecargarProducto}
               />
             )}/>
 
