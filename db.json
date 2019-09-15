@@ -2,7 +2,7 @@
   "restaurant": [
     {
       "nombrePlatillo": "CheeseCake",
-      "precioPlatillo": "300",
+      "precioPlatillo": "120",
       "categoria": "postre",
       "id": 1
     },
@@ -20,19 +20,19 @@
     },
     {
       "nombrePlatillo": "para eliminiar POST",
-      "precioPlatillo": "10",
+      "precioPlatillo": "5",
       "categoria": "bebida",
       "id": 4
     },
     {
       "nombrePlatillo": "eliminar 2",
       "precioPlatillo": "1",
-      "categoriaPlatillo": "bebida",
+      "categoria": "bebida",
       "id": 5
     },
     {
       "nombrePlatillo": "Cerveza Corona",
-      "precioPlatillo": "18",
+      "precioPlatillo": "20",
       "categoria": "bebida",
       "id": 6
     },
@@ -45,7 +45,7 @@
     {
       "nombrePlatillo": "picaña",
       "precioPlatillo": "220",
-      "categoriaPlatillo": "cortes",
+      "categoria": "cortes",
       "id": 8
     },
     {

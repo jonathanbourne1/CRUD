@@ -58,6 +58,7 @@ setRecargarProducto(false)
         
         return( <EditarProducto
           producto={producto[0]}
+          setRecargarProducto={setRecargarProducto}
         
           />)
           

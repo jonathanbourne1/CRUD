@@ -5,7 +5,10 @@ import Swal from 'sweetalert2'
 import {withRouter} from 'react-router-dom';
 
 
-function EditarProducto({history,setRecargarProducto,producto}){
+function EditarProducto(props){
+     //destructuring de props
+     const {history,setRecargarProducto,producto}= props
+
      //generar los Refs
     const precioPlatilloRef = useRef('');
     const nombrePlatilloRef= useRef('');
@@ -23,18 +26,31 @@ function EditarProducto({history,setRecargarProducto,producto}){
      //validacion
      const editProduct= async (e)=>{
           e.preventDefault()
-
+          const nuevoNombrePlatillo = nombrePlatilloRef.current.value;
+          const nuevoPrecioPlatillo = precioPlatilloRef.current.value;
           //revisar si cambio la categoria de lo contrario asignar el mismo valor
           let categoriaPlatillo=(categoria==='')? producto.categoria:categoria;
+
+
+          if(nuevoNombrePlatillo===''||nuevoPrecioPlatillo===''||categoriaPlatillo===''){
+               setErrorEdit(true)
+               console.log('falta algo');
+               console.log(nuevoNombrePlatillo);
+               console.log(nuevoPrecioPlatillo);
+               console.log(categoriaPlatillo);
+               return;
+          }
+          console.log('todobien');
+          console.log(nuevoNombrePlatillo);
+               console.log(nuevoPrecioPlatillo);
+               console.log(categoriaPlatillo);
+
+          
           //OBTENER VALORES DEL FORMULARIO
           const editarPlatillo ={
                nombrePlatillo : nombrePlatilloRef.current.value,
                precioPlatillo: precioPlatilloRef.current.value,
                categoria: categoriaPlatillo
-          }
-          if(nombrePlatilloRef.current.value===''||precioPlatilloRef.current.value===''||producto.categoria===''){
-               console.log('falta algo');
-               return;
           }
           
        const url =`http://localhost:4000/restaurant/${producto.id}` 
@@ -47,6 +63,8 @@ function EditarProducto({history,setRecargarProducto,producto}){
                     'Producto Editado Correctamente',
                     'success'
                   )  
+                 
+                 
             }
             
        } catch (error) {
@@ -58,6 +76,9 @@ function EditarProducto({history,setRecargarProducto,producto}){
               
              })
        }
+
+       setRecargarProducto(true)
+       history.push('/productos');
  }
    
 
